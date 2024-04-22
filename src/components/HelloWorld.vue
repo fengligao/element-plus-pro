@@ -1,12 +1,7 @@
-<script setup lang="ts">
-defineProps<{
-  msg: string
-}>()
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
     <el-button type="primary">element-button</el-button>
   </div>
 </template>
