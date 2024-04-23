@@ -3,6 +3,12 @@
 <template>
   <div class="greetings">
     <el-button type="primary">element-button</el-button>
+
+    <pro-button>默认按钮</pro-button>
+    <pro-button type="danger">危险按钮</pro-button>
+    <br />
+    <br />
+    <pro-input value="abcdefghigklmnopqrstuvwxyz"></pro-input>
   </div>
 </template>
 

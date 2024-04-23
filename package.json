@@ -1,7 +1,6 @@
 {
-  "name": "element-plus-pro",
-  "version": "0.0.0",
-  "private": true,
+  "name": "element-plus-super",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,7 +11,19 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/element-plus-super.umd.js",
+  "module": "./dist/element-plus-super.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/element-plus-super.es.js",
+      "require": "./dist/element-plus-super.umd.js"
+    }
+  },
   "dependencies": {
+    "element-plus-super": "^0.0.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
